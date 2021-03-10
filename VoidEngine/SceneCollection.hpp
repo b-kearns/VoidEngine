@@ -1,0 +1,25 @@
+#ifndef SceneCollection_hpp
+#define SceneCollection_hpp
+
+#include "Scene.hpp"
+
+#include <unordered_map>
+#include <memory>
+
+class SceneCollection
+{
+public:
+	SceneCollection();
+
+	void init();
+
+	void handleInput();
+	void update();
+	void render();
+
+private:
+	std::unordered_map<unsigned int, std::shared_ptr<Scene>> scenes_;
+	std::shared_ptr<Scene> currentScene;
+};
+
+#endif // !SceneCollection_hpp
