@@ -6,6 +6,9 @@
 #include <unordered_map>
 #include <memory>
 
+typedef std::unordered_map<unsigned int, std::shared_ptr<Scene>>	SceneMap;
+typedef std::shared_ptr<Scene>										ScenePtr;
+
 class SceneCollection
 {
 public:
@@ -18,8 +21,8 @@ public:
 	void render();
 
 private:
-	std::unordered_map<unsigned int, std::shared_ptr<Scene>> scenes_;
-	std::shared_ptr<Scene> currentScene;
+	SceneMap scenes;
+	ScenePtr currentScene;
 };
 
 #endif // !SceneCollection_hpp

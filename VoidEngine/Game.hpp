@@ -22,7 +22,6 @@ public:
 	bool isRunning();
 
 private:
-
 	SceneCollection sceneCollection;
 };
 

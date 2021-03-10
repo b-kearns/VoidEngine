@@ -1,6 +1,8 @@
 #ifndef Scene_hpp
 #define Scene_hpp
 
+#include "GameObjectCollection.hpp"
+
 class Scene
 {
 public:
@@ -15,6 +17,8 @@ public:
 	virtual void handleInput();
 	virtual void update();
 	virtual void render();
+private:
+	GameObjectCollection objectCollection;
 };
 
 #endif // !Scene_hpp
