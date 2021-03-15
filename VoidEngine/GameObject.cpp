@@ -22,5 +22,5 @@ void GameObject::update(float deltaTime)
 
 void GameObject::draw(Window& window)
 {
-	for (auto c : components) { c->draw(); }
+	for (auto c : components) { c->draw(window); }
 }
