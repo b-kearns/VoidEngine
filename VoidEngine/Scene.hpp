@@ -18,7 +18,7 @@ public:
 	virtual void handleInput();
 	virtual void update(float deltaTime);
 	virtual void draw(Window& window);
-private:
+protected:
 	GameObjectCollection objectCollection;
 };
 

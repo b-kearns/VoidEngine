@@ -10,7 +10,7 @@
 
 typedef std::vector<std::shared_ptr<Component>> ComponentList;
 
-class GameObject : sf::Transformable
+class GameObject : public sf::Transformable
 {
 public:
 	GameObject();
