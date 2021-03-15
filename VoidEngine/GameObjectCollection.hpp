@@ -18,7 +18,7 @@ public:
 	void add(ObjectList& objects);
 
 	void update();
-	void render();
+	void draw();
 private:
 	ObjectList objects;
 	ObjectList newObjectBuffer;

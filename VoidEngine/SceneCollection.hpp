@@ -18,7 +18,7 @@ public:
 
 	void handleInput();
 	void update();
-	void render();
+	void draw();
 
 private:
 	SceneMap scenes;

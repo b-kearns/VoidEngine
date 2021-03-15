@@ -17,7 +17,7 @@ public:
 
 	void handleInput();
 	void update();
-	void render();
+	void draw();
 
 	bool isRunning();
 

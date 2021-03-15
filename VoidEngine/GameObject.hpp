@@ -6,9 +6,11 @@
 #include <memory>
 #include <vector>
 
+#include <SFML/Graphics.hpp>
+
 typedef std::vector<std::shared_ptr<Component>> ComponentList;
 
-class GameObject
+class GameObject : sf::Transformable
 {
 public:
 	GameObject();
@@ -17,7 +19,7 @@ public:
 	void start();
 
 	void update();
-	void render();
+	void draw();
 private:
 	ComponentList components;
 };

@@ -12,7 +12,7 @@ public:
 	virtual void start() {};
 
 	virtual void update() {};
-	virtual void render() {};
+	virtual void draw() {};
 
 protected:
 	GameObject* owner;

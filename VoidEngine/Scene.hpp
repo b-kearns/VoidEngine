@@ -16,7 +16,7 @@ public:
 
 	virtual void handleInput();
 	virtual void update();
-	virtual void render();
+	virtual void draw();
 private:
 	GameObjectCollection objectCollection;
 };
