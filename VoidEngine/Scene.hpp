@@ -2,6 +2,7 @@
 #define Scene_hpp
 
 #include "GameObjectCollection.hpp"
+#include "Window.hpp"
 
 class Scene
 {
@@ -15,8 +16,8 @@ public:
 	virtual void onDeactivate();
 
 	virtual void handleInput();
-	virtual void update();
-	virtual void draw();
+	virtual void update(float deltaTime);
+	virtual void draw(Window& window);
 private:
 	GameObjectCollection objectCollection;
 };

@@ -1,0 +1,8 @@
+﻿  Game.cpp
+  GameObject.cpp
+  Window.cpp
+  Generating Code...
+Game.obj : error LNK2019: unresolved external symbol "public: __cdecl SceneCollection::SceneCollection(void)" (??0SceneCollection@@QEAA@XZ) referenced in function "public: __cdecl Game::Game(void)" (??0Game@@QEAA@XZ)
+Game.obj : error LNK2019: unresolved external symbol "public: void __cdecl SceneCollection::update(float)" (?update@SceneCollection@@QEAAXM@Z) referenced in function "public: void __cdecl Game::update(void)" (?update@Game@@QEAAXXZ)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+E:\Programming Projects\VoidEngine\x64\Debug\VoidEngine.exe : fatal error LNK1120: 3 unresolved externals

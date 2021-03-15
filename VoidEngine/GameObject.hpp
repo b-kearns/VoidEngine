@@ -18,8 +18,8 @@ public:
 	void awake();
 	void start();
 
-	void update();
-	void draw();
+	void update(float deltaTime);
+	void draw(Window& window);
 private:
 	ComponentList components;
 };

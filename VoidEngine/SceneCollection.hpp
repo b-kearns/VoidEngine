@@ -2,6 +2,7 @@
 #define SceneCollection_hpp
 
 #include "Scene.hpp"
+#include "Window.hpp"
 
 #include <unordered_map>
 #include <memory>
@@ -17,8 +18,8 @@ public:
 	void init();
 
 	void handleInput();
-	void update();
-	void draw();
+	void update(float deltaTime);
+	void draw(Window& window);
 
 private:
 	SceneMap scenes;

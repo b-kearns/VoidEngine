@@ -1,6 +1,8 @@
 #ifndef Component_hpp
 #define Component_hpp
 
+#include "Window.hpp"
+
 class GameObject;
 
 class Component
@@ -11,8 +13,8 @@ public:
 	virtual void awake() {};
 	virtual void start() {};
 
-	virtual void update() {};
-	virtual void draw() {};
+	virtual void update(float deltaTime) {};
+	virtual void draw(Window& window) {};
 
 protected:
 	GameObject* owner;
