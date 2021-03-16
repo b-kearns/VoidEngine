@@ -3,6 +3,7 @@
 
 #include "Scene.hpp"
 #include "Window.hpp"
+#include "ResourceAllocator.hpp"
 
 class S_TitleScreen : public Scene
 {
@@ -19,5 +20,6 @@ public:
 	void update(float deltaTime) override;
 	void draw(Window& window) override;
 private:
+	ResourceAllocator<sf::Texture> textureAllocator;
 };
 #endif // !TitleScreen_hpp
