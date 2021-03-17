@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="Component.hpp" />
     <ClInclude Include="C_SpriteRenderer.hpp" />
+    <ClInclude Include="C_TileMap.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="GameObject.hpp" />
     <ClInclude Include="GameObjectCollection.hpp" />
@@ -32,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C_SpriteRenderer.cpp" />
+    <ClCompile Include="C_TileMap.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameObjectCollection.cpp" />

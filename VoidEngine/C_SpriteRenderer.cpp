@@ -5,6 +5,18 @@ C_SpriteRenderer::C_SpriteRenderer(GameObject* owner)
 {
 }
 
+void C_SpriteRenderer::awake()
+{
+}
+
+void C_SpriteRenderer::start()
+{
+}
+
+void C_SpriteRenderer::update(float deltaTime)
+{
+}
+
 void C_SpriteRenderer::draw(Window& window)
 {
 	window.draw(sprite);

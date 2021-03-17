@@ -11,6 +11,10 @@ class C_SpriteRenderer : public Component
 public:
 	C_SpriteRenderer(GameObject* owner);
 
+	void awake() override;
+	void start() override;
+	void update(float deltaTime) override;
+
 	void draw(Window& window) override;
 
 	void load(int id);
