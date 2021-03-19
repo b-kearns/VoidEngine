@@ -9,8 +9,8 @@ class Scene
 public:
 	Scene();
 
-	virtual void onCreate();
-	virtual void onDestroy();
+	virtual void onCreate() = 0;
+	virtual void onDestroy() = 0;
 
 	virtual void onActivate();
 	virtual void onDeactivate();

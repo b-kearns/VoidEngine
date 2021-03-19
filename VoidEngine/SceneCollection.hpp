@@ -21,9 +21,16 @@ public:
 	void update(float deltaTime);
 	void draw(Window& window);
 
+	void switchTo(unsigned int id);
+
+	unsigned int add(ScenePtr scene);
+	void remove(unsigned int id);
+
 private:
 	SceneMap scenes;
 	ScenePtr currentScene;
+
+	unsigned int insertedSceneID;
 };
 
 #endif // !SceneCollection_hpp

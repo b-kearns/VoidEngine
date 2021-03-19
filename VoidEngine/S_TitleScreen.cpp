@@ -1,11 +1,14 @@
 #include "S_TitleScreen.hpp"
 
-S_TitleScreen::S_TitleScreen()
+S_TitleScreen::S_TitleScreen(WorkingDirectory& workingDirectory, SceneCollection& sceneCollection, Window& window)
+	: workingDirectoryRef(workingDirectory), sceneCollectionRef(sceneCollection), windowRef(window)
 {
 }
 
 void S_TitleScreen::onCreate()
 {
+	//Create O_TitleImage
+
 }
 
 void S_TitleScreen::onDestroy()
